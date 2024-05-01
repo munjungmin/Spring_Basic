@@ -1,0 +1,2 @@
+def s = rootProject.name = 'hello-spring'
+s
