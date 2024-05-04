@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>(); // 실무에서는 동시성 문제가 있을 수 있어서 공유되는 변수일때는 컨커런트 해시맵을 써야함
     private static long sequence = 0L;  // 동시성 문제로 어텀롱?써야되는데 간단하게 함
